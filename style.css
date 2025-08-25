@@ -74,7 +74,7 @@ body {
 
 .weight select,
 .height select {
-    flex: 1;
+     
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -162,16 +162,27 @@ button {
 .bmi{
     font-size: 2rem;
 }
-@media (max-width: 500px) {
-  .decided-feild {
-    width: 90%;   /* phone pe puri screen cover kare */
-    padding: 15px;
-  }
-
-  button {
-    flex: 1; /* buttons same width le le */
-  }
+ @media(max-width: 500px){
+    .decided-feild{
+        width: 95%;
+        padding: 15px;
+    }
+    .weight input,
+    .height input{
+        flex: unset;
+        width: 70%;
+    }
+    .weight select,
+    .height select{
+        flex: unset;
+        width: 30%;
+    }
+    button{
+        flex: 1;
+    }
+    
 }
+
 
 
  
